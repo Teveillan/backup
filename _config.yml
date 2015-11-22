@@ -132,4 +132,4 @@ qiniu:
 backup:
     type: git
     repository:
-       github: teveillan@github.com/Teveillan/blog_backup.git/master
+       github: githb.com/Teveillan/blog_backup.git/master
