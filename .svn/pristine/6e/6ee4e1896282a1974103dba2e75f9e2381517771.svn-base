@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="baidu-site-verification" content="FNQZfwk2LO" />
+  <meta name="google-site-verification" content="Tiy4g_fxDyWORG0NcTPGtG9BomPV280Nfmd_a4DwBnM" />
+  
+  <title>Teveillan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Teveillan">
+<meta property="og:url" content="http://teveillan.com/">
+<meta property="og:site_name" content="Teveillan">
+<meta property="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Teveillan">
+<meta name="twitter:description">
+
+  
+    <link rel="alternative" href="/atom.xml" title="Teveillan" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+  
+
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<div class="profilepic">
+			<img src="https://raw.githubusercontent.com/Teveillan/Teveillan.github.io/master/img/teveillan.jpg">
+		</div>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Teveillan</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">不把CF TC刷红的人生是不完整的。</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/categories/红名">红名</a></li>
+				        
+							<li><a href="/categories/Tech">Tech</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/teveillan" title="github">github</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+								<a class="google" target="_blank" href="mailto:teveillan@gmail.com" title="google">google</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud">
+						<a href="/tags/BestCoder/" style="font-size: 20.00px;">BestCoder</a><a href="/tags/HDU/" style="font-size: 15.00px;">HDU</a><a href="/tags/MacOS/" style="font-size: 15.00px;">MacOS</a><a href="/tags/VIM/" style="font-size: 15.00px;">VIM</a><a href="/tags/随笔/" style="font-size: 10.00px;">随笔</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://darkrhythm.net/">Pira-黄大神</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://litten.github.io/">Litten</a>
+			        
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay"></div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="https://raw.githubusercontent.com/Teveillan/Teveillan.github.io/master/img/teveillan.jpg">
+			</div>
+
+			<hgroup>
+			  <h1 class="header-author"><a href="/">Teveillan</a></h1>
+			</hgroup>
+			
+			<p class="header-subtitle">不把CF TC刷红的人生是不完整的。</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/categories/红名">红名</a></li>
+		        
+					<li><a href="/categories/Tech">Tech</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/teveillan" title="github">github</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+						<a class="google" target="_blank" href="mailto:teveillan@gmail.com" title="google">google</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      
+  
+    <article id="post-CDQ分治" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/05/02/CDQ分治/" class="article-date">
+  	<time datetime="2015-05-02T08:48:26.000Z" itemprop="datePublished">5月 2 2015</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Algorithm/">Algorithm</a>
+  </div>
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HDU/">HDU</a></li></ul>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/05/02/CDQ分治/">CDQ分治 &amp;&amp; HDU 5126</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>参考文献：<a href="http://wenku.baidu.com/view/52f9c11cff00bed5b9f31d2d.html" target="_blank" rel="external">从《Cash》谈一类分治算法的应用</a> — 陈丹琦</p>
+<p>也因此简称CDQ分治。</p>
+<p>个人理解CDQ分治和普通分治最大的区别为：<br>普通分治可以将问题拆成几个相互独立的子问题<br>CDQ分治将问题分成了两个部分：</p>
+<ol>
+<li>相互独立的两个子问题  </li>
+<li>两个子问题之间的联系</li>
+</ol>
+<p>因此，CDQ分治的算法流程也分为以下几步：</p>
+<blockquote>
+<ol>
+<li>算法开始</li>
+<li>取一个中间点mid, 将问题分为[L, mid] 和 [mid + 1, R]两个部分。分别处理两个子问题</li>
+<li>处理[L, mid] 和 [mid + 1, R]之间的联系</li>
+</ol>
+</blockquote>
+
+        
+          <p class="article-more-link">
+            <a href="/2015/05/02/CDQ分治/#more">more >></a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+
+
+  
+    <article id="post-HDU-5208-Where-is-Bob-Bestcoder-Round38-C题" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/04/21/HDU-5208-Where-is-Bob-Bestcoder-Round38-C题/" class="article-date">
+  	<time datetime="2015-04-21T09:57:45.000Z" itemprop="datePublished">4月 21 2015</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/红名/">红名</a>
+  </div>
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BestCoder/">BestCoder</a></li></ul>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/04/21/HDU-5208-Where-is-Bob-Bestcoder-Round38-C题/">HDU 5208 Where is Bob &amp;&amp; Bestcoder Round38 C题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>题目链接：<a href="http://acm.hdu.edu.cn/showproblem.php?pid=5208" target="_blank" rel="external">http://acm.hdu.edu.cn/showproblem.php?pid=5208</a></p>
+<p>近似于数位DP的思路。<br>用数位DP求区间中符号条件的数有多少的时候，有时会用一个符号位来记录当前的取值是否达到区间的上界。这里同样用这个办法。（官方题解我有点没看懂，我的解法有可能和官方题解不一样）</p>
+<p>看到题第一眼，觉得应该优先从高位到低位处理，在以下两种情况中，决策应该是确定的：</p>
+<ul>
+<li>第一个人只能取0或1中的一个。这时候第二个人一定是尽量取和第一个人一样的值。</li>
+<li>第二个人只能取0或1中得一个，而第一个人两个都可以选。第一个人自然取第二个人取不到的值。</li>
+</ul>
+<p>但是，当在这两种情况之外，决策就不唯一了。这时，先把低位的决策解决了就很有必要。<br>
+        
+          <p class="article-more-link">
+            <a href="/2015/04/21/HDU-5208-Where-is-Bob-Bestcoder-Round38-C题/#more">more >></a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+
+
+  
+    <article id="post-BestCoder-Round-25" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/01/09/BestCoder-Round-25/" class="article-date">
+  	<time datetime="2015-01-09T05:57:46.000Z" itemprop="datePublished">1月 9 2015</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/红名/">红名</a>
+  </div>
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/BestCoder/">BestCoder</a></li></ul>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/09/BestCoder-Round-25/">BestCoder Round #25</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="1001_Harry_and_Magical_Computer">1001 Harry and Magical Computer</h2>
+<p>就是判断有没有环存在。<br>点比较少，Floyd一遍O(n^3)就行。</p>
+<h2 id="1002_Harry_And_Magic_Box">1002 Harry And Magic Box</h2>
+<p>官方题解是O(n^4)的，其实中间有一维可以省略。（小地方而已。。不管也罢。。）<br>
+        
+          <p class="article-more-link">
+            <a href="/2015/01/09/BestCoder-Round-25/#more">more >></a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+
+
+  
+    <article id="post--转-Manacher算法-回文串处理" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/01/09/-转-Manacher算法-回文串处理/" class="article-date">
+  	<time datetime="2015-01-09T03:45:39.000Z" itemprop="datePublished">1月 9 2015</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Algorithm/">Algorithm</a>
+  </div>
+
+      
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/09/-转-Manacher算法-回文串处理/">[转] Manacher算法-回文串处理</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>Manacher</strong>算法是查找一个字符串的最长回文子串的线性算法。<br>在介绍算法之前，首先介绍一下什么是回文串，所谓回文串，简单来说就是正着读和反着读都是一样的字符串，比如abba，noon等等，一个字符串的最长回文子串即为这个字符串的子串中，是回文串的最长的那个。<br>计算字符串的最长回文字串最简单的算法就是枚举该字符串的每一个子串，并且判断这个子串是否为回文串，这个算法的时间复杂度为O(n^3)的，显然无法令人满意，稍微优化的一个算法是枚举回文串的中点，这里要分为两种情况，一种是回文串长度是奇数的情况，另一种是回文串长度是偶数的情况，枚举中点再判断是否是回文串，这样能把算法的时间复杂度降为O(n^2)，但是当n比较大的时候仍然无法令人满意，Manacher算法可以在线性时间复杂度内求出一个字符串的最长回文字串，达到了理论上的下界。</p>
+
+        
+          <p class="article-more-link">
+            <a href="/2015/01/09/-转-Manacher算法-回文串处理/#more">more >></a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+
+
+  
+    <article id="post-Mac中安装Vim7-4" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/01/07/Mac中安装Vim7-4/" class="article-date">
+  	<time datetime="2015-01-07T04:58:51.000Z" itemprop="datePublished">1月 7 2015</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Tech/">Tech</a>
+  </div>
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MacOS/">MacOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/VIM/">VIM</a></li></ul>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/07/Mac中安装Vim7-4/">(转) Mac中安装Vim7.4</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Mac本身其实是预装了Vim的，但是目前的系统中都是Vim7.3版本的，而最新的Vim已经是7.4版了，因此为了能够使用最新版的vim，必须要对Mac中的vim要么升级，要么重装。在折腾过程中，遇到了一些问题，这里记录，以鉴后人。</p>
+<p>
+        
+          <p class="article-more-link">
+            <a href="/2015/01/07/Mac中安装Vim7-4/#more">more >></a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+
+
+  
+    <article id="post-最短路-SPFA" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/01/04/最短路-SPFA/" class="article-date">
+  	<time datetime="2015-01-04T07:32:34.000Z" itemprop="datePublished">1月 4 2015</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Algorithm/">Algorithm</a>
+  </div>
+
+      
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/04/最短路-SPFA/">最短路 SPFA</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>首先，为了简化分析，我们假定图中是没有负环的。<br>如果有负环，则就没有最短路径。</p>
+<blockquote>
+<p>负环：一条从a到a的路径，路径上每条边的边权和为负。</p>
+</blockquote>
+<p>但是SPFA算法是可以判断是否有负环存在的，比较基本的做法是判断每个点进队出队的次数，这个复杂度比较高。其实有一种DFS版的SPFA，用这个来判断是否有负环的效率是非常高的，这个我们后续再讲。</p>
+<p>最短路的算法中都用着一种通用的思路：</p>
+<ul>
+<li>初始化</li>
+<li>松弛操作<br>
+        
+          <p class="article-more-link">
+            <a href="/2015/01/04/最短路-SPFA/#more">more >></a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+
+
+  
+    <article id="post-网络流" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/01/04/网络流/" class="article-date">
+  	<time datetime="2015-01-04T05:01:59.000Z" itemprop="datePublished">1月 4 2015</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Algorithm/">Algorithm</a>
+  </div>
+
+      
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/04/网络流/">网络流</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>网络流，也被称为最大流。</p>
+<p>模型也非常简单，就是一个管道系统，在有源点，汇点，和一堆有流速限制的管道连接的情况下，问能从源点到汇点传输流量的最大流速是多少。如下图所示。</p>
+<p><img src="http://7tszmu.com1.z0.glb.clouddn.com/网络流.png" alt="Alt text"><br>
+        
+          <p class="article-more-link">
+            <a href="/2015/01/04/网络流/#more">more >></a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+
+
+  
+    <article id="post-New-Year" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/01/02/New-Year/" class="article-date">
+  	<time datetime="2015-01-02T15:16:29.000Z" itemprop="datePublished">1月 2 2015</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/随笔/">随笔</a>
+  </div>
+
+      
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/02/New-Year/">New Year</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>新的一年，要把CF刷红，TC刷红。<br>托福要过，N2看着办吧。。。<br>至于签了百度什么的。。。呵呵呵呵。。。妥妥地不想回去了。。。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+
+
+  
+  
+
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 Teveillan
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+  <script src="/js/main.js" type="text/javascript"></script>
+
+
+  </div>
+</body>
+</html>

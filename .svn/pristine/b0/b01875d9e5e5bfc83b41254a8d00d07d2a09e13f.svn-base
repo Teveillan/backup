@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="baidu-site-verification" content="FNQZfwk2LO" />
+  <meta name="google-site-verification" content="Tiy4g_fxDyWORG0NcTPGtG9BomPV280Nfmd_a4DwBnM" />
+  
+  <title>[转] Manacher算法-回文串处理 | Teveillan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Manacher算法是查找一个字符串的最长回文子串的线性算法。在介绍算法之前，首先介绍一下什么是回文串，所谓回文串，简单来说就是正着读和反着读都是一样的字符串，比如abba，noon等等，一个字符串的最长回文子串即为这个字符串的子串中，是回文串的最长的那个。计算字符串的最长回文字串最简单的算法就是枚举该字符串的每一个子串，并且判断这个子串是否为回文串，这个算法的时间复杂度为O(n^3)的，显然无法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[转] Manacher算法-回文串处理">
+<meta property="og:url" content="http://teveillan.com/2015/01/09/-转-Manacher算法-回文串处理/index.html">
+<meta property="og:site_name" content="Teveillan">
+<meta property="og:description" content="Manacher算法是查找一个字符串的最长回文子串的线性算法。在介绍算法之前，首先介绍一下什么是回文串，所谓回文串，简单来说就是正着读和反着读都是一样的字符串，比如abba，noon等等，一个字符串的最长回文子串即为这个字符串的子串中，是回文串的最长的那个。计算字符串的最长回文字串最简单的算法就是枚举该字符串的每一个子串，并且判断这个子串是否为回文串，这个算法的时间复杂度为O(n^3)的，显然无法">
+<meta property="og:image" content="http://7tszmu.com1.z0.glb.clouddn.com/Manacher-1.png">
+<meta property="og:image" content="http://7tszmu.com1.z0.glb.clouddn.com/Manacher-2.png">
+<meta property="og:image" content="http://7tszmu.com1.z0.glb.clouddn.com/Manacher-3.png">
+<meta property="og:image" content="http://7tszmu.com1.z0.glb.clouddn.com/Manacher-4.png">
+<meta property="og:image" content="http://7tszmu.com1.z0.glb.clouddn.com/Manacher-5.png">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="[转] Manacher算法-回文串处理">
+<meta name="twitter:description" content="Manacher算法是查找一个字符串的最长回文子串的线性算法。在介绍算法之前，首先介绍一下什么是回文串，所谓回文串，简单来说就是正着读和反着读都是一样的字符串，比如abba，noon等等，一个字符串的最长回文子串即为这个字符串的子串中，是回文串的最长的那个。计算字符串的最长回文字串最简单的算法就是枚举该字符串的每一个子串，并且判断这个子串是否为回文串，这个算法的时间复杂度为O(n^3)的，显然无法">
+  
+    <link rel="alternative" href="/atom.xml" title="Teveillan" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+
+  <script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+</head>
+
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<div class="profilepic">
+			<img src="https://raw.githubusercontent.com/Teveillan/Teveillan.github.io/master/img/teveillan.jpg">
+		</div>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">Teveillan</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">不把CF TC刷红的人生是不完整的。</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/categories/红名">红名</a></li>
+				        
+							<li><a href="/categories/Tech">Tech</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="https://github.com/teveillan" title="github">github</a>
+					        
+								<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+					        
+								<a class="google" target="_blank" href="mailto:teveillan@gmail.com" title="google">google</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud">
+						<a href="/tags/BestCoder/" style="font-size: 20px;">BestCoder</a><a href="/tags/HDU/" style="font-size: 10px;">HDU</a><a href="/tags/MacOS/" style="font-size: 10px;">MacOS</a><a href="/tags/VIM/" style="font-size: 10px;">VIM</a>
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://darkrhythm.net/">Pira-黄大神</a>
+			        
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="http://litten.github.io/">Litten</a>
+			        
+				</section>
+				
+
+				
+				
+				<section class="switch-part switch-part4">
+				
+					我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay"></div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img src="https://raw.githubusercontent.com/Teveillan/Teveillan.github.io/master/img/teveillan.jpg">
+			</div>
+
+			<hgroup>
+			  <h1 class="header-author"><a href="/">Teveillan</a></h1>
+			</hgroup>
+			
+			<p class="header-subtitle">不把CF TC刷红的人生是不完整的。</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/categories/红名">红名</a></li>
+		        
+					<li><a href="/categories/Tech">Tech</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="https://github.com/teveillan" title="github">github</a>
+			        
+						<a class="rss" target="_blank" href="/atom.xml" title="rss">rss</a>
+			        
+						<a class="google" target="_blank" href="mailto:teveillan@gmail.com" title="google">google</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <article id="post--转-Manacher算法-回文串处理" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/01/09/-转-Manacher算法-回文串处理/" class="article-date">
+  	<time datetime="2015-01-09T03:45:39.000Z" itemprop="datePublished">1月 9 2015</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Algorithm/">Algorithm</a>
+  </div>
+
+      
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      [转] Manacher算法-回文串处理
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><strong>Manacher</strong>算法是查找一个字符串的最长回文子串的线性算法。<br>在介绍算法之前，首先介绍一下什么是回文串，所谓回文串，简单来说就是正着读和反着读都是一样的字符串，比如abba，noon等等，一个字符串的最长回文子串即为这个字符串的子串中，是回文串的最长的那个。<br>计算字符串的最长回文字串最简单的算法就是枚举该字符串的每一个子串，并且判断这个子串是否为回文串，这个算法的时间复杂度为O(n^3)的，显然无法令人满意，稍微优化的一个算法是枚举回文串的中点，这里要分为两种情况，一种是回文串长度是奇数的情况，另一种是回文串长度是偶数的情况，枚举中点再判断是否是回文串，这样能把算法的时间复杂度降为O(n^2)，但是当n比较大的时候仍然无法令人满意，Manacher算法可以在线性时间复杂度内求出一个字符串的最长回文字串，达到了理论上的下界。</p>
+<a id="more"></a>
+<h1 id="Manacher算法原理与实现">Manacher算法原理与实现</h1><p>下面介绍Manacher算法的原理与步骤。<br>首先，Manacher算法提供了一种巧妙地办法，将长度为奇数的回文串和长度为偶数的回文串一起考虑，具体做法是，在原字符串的每个相邻两个字符中间插入一个分隔符，同时在首尾也要添加一个分隔符，分隔符的要求是不在原串中出现，一般情况下可以用#号。下面举一个例子：<br><img src="http://7tszmu.com1.z0.glb.clouddn.com/Manacher-1.png" alt=""></p>
+<h2 id="Len数组简介与性质">Len数组简介与性质</h2><p>Manacher算法用一个辅助数组Len[i]表示以字符T[i]为中心的最长回文字串的最右字符到T[i]的长度，比如以T[i]为中心的最长回文字串是T[l,r],那么Len[i]=r-i+1。<br>对于上面的例子，可以得出Len[i]数组为:</p>
+<p><img src="http://7tszmu.com1.z0.glb.clouddn.com/Manacher-2.png" alt=""></p>
+<p>Len数组有一个性质，那就是Len[i]-1就是该回文子串在原字符串S中的长度，至于证明，首先在转换得到的字符串T中，所有的回文字串的长度都为奇数，那么对于以T[i]为中心的最长回文字串，其长度就为2*Len[i]-1,经过观察可知，T中所有的回文子串，其中分隔符的数量一定比其他字符的数量多1，也就是有Len[i]个分隔符，剩下Len[i]-1个字符来自原字符串，所以该回文串在原字符串中的长度就为Len[i]-1。<br>有了这个性质，那么原问题就转化为求所有的Len[i]。下面介绍如何在线性时间复杂度内求出所有的Len。</p>
+<h2 id="Len数组的计算">Len数组的计算</h2><p>首先从左往右依次计算Len[i]，当计算Len[i]时，Len<a href="0&lt;=j&lt;i">j</a>已经计算完毕。设P为之前计算中最长回文子串的右端点的最大值，并且设取得这个最大值的位置为po，分两种情况：<br>第一种情况：i&lt;=P<br>那么找到i相对于po的对称位置，设为j，那么如果Len[j]&lt;P-i，如下图：</p>
+<p><img src="http://7tszmu.com1.z0.glb.clouddn.com/Manacher-3.png" alt=""></p>
+<p>那么说明以j为中心的回文串一定在以po为中心的回文串的内部，且j和i关于位置po对称，由回文串的定义可知，一个回文串反过来还是一个回文串，所以以i为中心的回文串的长度至少和以j为中心的回文串一样，即Len[i]&gt;=Len[j]。因为Len[j]<p-i,所以说i+len[j]<p。由对称性可知len[i]=len[j]。 如果len[j]="">=P-i,由对称性，说明以i为中心的回文串可能会延伸到P之外，而大于P的部分我们还没有进行匹配，所以要从P+1位置开始一个一个进行匹配，直到发生失配，从而更新P和对应的po以及Len[i]。</p-i,所以说i+len[j]<p。由对称性可知len[i]=len[j]。></p>
+<p><img src="http://7tszmu.com1.z0.glb.clouddn.com/Manacher-4.png" alt=""></p>
+<p>第二种情况: i&gt;P<br>如果i比P还要大，说明对于中点为i的回文串还一点都没有匹配，这个时候，就只能老老实实地一个一个匹配了，匹配完成后要更新P的位置和对应的po以及Len[i]。</p>
+<p><img src="http://7tszmu.com1.z0.glb.clouddn.com/Manacher-5.png" alt=""></p>
+<h1 id="时间复杂度分析">时间复杂度分析</h1><p>Manacher算法的时间复杂度分析和Z算法类似，因为算法只有遇到还没有匹配的位置时才进行匹配，已经匹配过的位置不再进行匹配，所以对于T字符串中的每一个位置，只进行一次匹配，所以Manacher算法的总体时间复杂度为O(n)，其中n为T字符串的长度，由于T的长度事实上是S的两倍，所以时间复杂度依然是线性的。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> <span class="keyword">int</span> MAX_LEN = <span class="number">1e5</span> + <span class="number">10</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">int</span> Len[MAX_LEN&lt;&lt;<span class="number">1</span>]; <span class="comment">//记录算法完成后以i点为中心最长回文串向左向右延伸的半径</span></span><br><span class="line"><span class="keyword">struct</span> Manacher &#123;</span><br><span class="line">    <span class="keyword">char</span> tmp_str[MAX_LEN&lt;&lt;<span class="number">1</span>]; <span class="comment">//记录预处理过后的字符串</span></span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">init</span><span class="params">(<span class="keyword">char</span> *s)</span> </span>&#123; <span class="comment">//在solve中就直接调用了。对原串进行预处理。</span></span><br><span class="line">        <span class="keyword">int</span> len = <span class="built_in">strlen</span>(s);</span><br><span class="line">        <span class="keyword">int</span> id = <span class="number">0</span>;</span><br><span class="line">        tmp_str[id++] = <span class="string">'#'</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;len; ++i) &#123;</span><br><span class="line">            tmp_str[id++] = s[i];</span><br><span class="line">            tmp_str[id++] = <span class="string">'#'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        tmp_str[id] = <span class="string">'\0'</span>;</span><br><span class="line">        <span class="keyword">return</span> id; <span class="comment">//此时的id即为处理过后的字符串长度</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">void</span> <span class="title">solve</span><span class="params">(<span class="keyword">char</span> *s)</span> </span>&#123; <span class="comment">//从这开始处理</span></span><br><span class="line">        <span class="keyword">int</span> len = init(s);</span><br><span class="line">        <span class="keyword">int</span> max_r = -<span class="number">1</span>, max_id = -<span class="number">1</span>; <span class="comment">// 最右能到得地方，以及最右时的中心点id</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>; i&lt;len; ++i) &#123;</span><br><span class="line">            <span class="keyword">if</span>(max_r &gt; i)   Len[i] = min(max_r - i, Len[<span class="number">2</span> * max_id - i]);</span><br><span class="line">            <span class="keyword">else</span> Len[i] = <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">while</span>(i - Len[i] &gt;= <span class="number">0</span> &amp;&amp; i + Len[i] &lt; len &amp;&amp; tmp_str[i - Len[i]] == tmp_str[i + Len[i]])</span><br><span class="line">                ++Len[i];</span><br><span class="line"></span><br><span class="line">            <span class="keyword">if</span>(i + Len[i] &gt; max_r) &#123;</span><br><span class="line">                max_r = i + Len[i];</span><br><span class="line">                max_id = i;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<p>转自：<a href="http://blog.csdn.net/dyx404514/article/details/42061017" target="_blank" rel="external">http://blog.csdn.net/dyx404514/article/details/42061017</a><br>作者：dyx心心</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/01/09/BestCoder-Round-25/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">&lt;</strong>
+      <div class="article-nav-title">
+        
+          BestCoder Round #25
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/01/07/Mac中安装Vim7-4/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">(转) Mac中安装Vim7.4</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="-转-Manacher算法-回文串处理" data-title="[转] Manacher算法-回文串处理" data-url="http://teveillan.com/2015/01/09/-转-Manacher算法-回文串处理/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"teveillan"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 Teveillan
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+  <script src="/js/main.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,247 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[remote "0"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/0/undefined
+[remote "1"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/1/undefined
+[remote "2"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/2/undefined
+[remote "3"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/3/undefined
+[remote "4"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/4/undefined
+[remote "5"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/5/undefined
+[remote "6"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/6/undefined
+[remote "7"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/7/undefined
+[remote "8"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/8/undefined
+[remote "9"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/9/undefined
+[remote "10"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/10/undefined
+[remote "11"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/11/undefined
+[remote "12"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/12/undefined
+[remote "13"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/13/undefined
+[remote "14"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/14/undefined
+[remote "15"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/15/undefined
+[remote "16"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/16/undefined
+[remote "17"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/17/undefined
+[remote "18"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/18/undefined
+[remote "19"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/19/undefined
+[remote "20"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/20/undefined
+[remote "21"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/21/undefined
+[remote "22"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/22/undefined
+[remote "23"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/23/undefined
+[remote "24"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/24/undefined
+[remote "25"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/25/undefined
+[remote "26"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/26/undefined
+[remote "27"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/27/undefined
+[remote "28"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/28/undefined
+[remote "29"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/29/undefined
+[remote "30"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/30/undefined
+[remote "31"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/31/undefined
+[remote "32"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/32/undefined
+[remote "33"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/33/undefined
+[remote "34"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/34/undefined
+[remote "35"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/35/undefined
+[remote "36"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/36/undefined
+[remote "37"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/37/undefined
+[remote "38"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/38/undefined
+[remote "39"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/39/undefined
+[remote "40"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/40/undefined
+[remote "41"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/41/undefined
+[remote "42"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/42/undefined
+[remote "43"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/43/undefined
+[remote "44"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/44/undefined
+[remote "45"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/45/undefined
+[remote "46"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/46/undefined
+[remote "47"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/47/undefined
+[remote "48"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/48/undefined
+[remote "49"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/49/undefined
+[remote "50"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/50/undefined
+[remote "51"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/51/undefined
+[remote "bold"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/bold/undefined
+[remote "underline"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/underline/undefined
+[remote "strikethrough"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/strikethrough/undefined
+[remote "italic"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/italic/undefined
+[remote "inverse"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/inverse/undefined
+[remote "grey"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/grey/undefined
+[remote "black"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/black/undefined
+[remote "yellow"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/yellow/undefined
+[remote "red"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/red/undefined
+[remote "green"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/green/undefined
+[remote "blue"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/blue/undefined
+[remote "white"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/white/undefined
+[remote "cyan"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/cyan/undefined
+[remote "magenta"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/magenta/undefined
+[remote "greyBG"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/greyBG/undefined
+[remote "blackBG"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/blackBG/undefined
+[remote "yellowBG"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/yellowBG/undefined
+[remote "redBG"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/redBG/undefined
+[remote "greenBG"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/greenBG/undefined
+[remote "blueBG"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/blueBG/undefined
+[remote "whiteBG"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/whiteBG/undefined
+[remote "cyanBG"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/cyanBG/undefined
+[remote "magentaBG"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/magentaBG/undefined
+[remote "rainbow"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/rainbow/undefined
+[remote "zebra"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/zebra/undefined
+[remote "stripColors"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/stripColors/undefined
+[remote "zalgo"]
+	url = undefined
+	fetch = +refs/heads/undefined:refs/remotes/zalgo/undefined
+[branch "master"]
+	remote = https://github.com/teveillan/teveillan.github.io.git
+	merge = refs/heads/master
