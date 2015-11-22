@@ -128,8 +128,7 @@ qiniu:
   css:
     folder: css
 
-
 backup:
     type: git
     repository:
-	   github: git@github.com:Teveillan/blog_backup.git
+	   github: teveillan@github.com:Teveillan/blog_backup.git
