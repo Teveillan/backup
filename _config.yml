@@ -131,4 +131,4 @@ qiniu:
 backup:
     type: git
     repository:
-	   github: teveillan@gmail.com:Teveillan/blog_backup.git
+	   github: git@github.com:Teveillan/blog_backup.git
