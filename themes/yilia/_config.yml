@@ -36,7 +36,7 @@ animate: true
 open_in_new: false
 
 # Miscellaneous
-google_analytics: ''
+google_analytics: "UA-75903760-1"
 favicon: /favicon.png
 
 #你的头像url
@@ -57,6 +57,7 @@ tagcloud: true
 friends:
     Pira-黄大神: http://darkrhythm.net/
     Litten: http://litten.github.io/
+    Yifan: http://www.zhuoyifan.net/
 
 #是否开启“关于我”。
 #不开启——
