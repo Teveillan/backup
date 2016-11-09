@@ -132,4 +132,5 @@ backup:
     type: git
     message: "update"
     repository:
-	   github: git@github.com:Teveillan/blog_backup.git,master
+        github: https://github.com/Teveillan/blog_backup
+
