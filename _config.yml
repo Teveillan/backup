@@ -131,6 +131,5 @@ qiniu:
 backup:
     type: git
     message: "update"
-    repository: git@github.com:Teveillan/blog_backup.git
-	   
+    repository: git@github.com:Teveillan/blog_backup.git, master
 
