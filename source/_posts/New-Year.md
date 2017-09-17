@@ -2,7 +2,6 @@ title: New Year
 date: 2015-01-02 23:16:29
 categories: 随笔
 tags: 
-description: What’t this?
 ---
 
 新的一年，要把CF刷红，TC刷红。

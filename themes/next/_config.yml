@@ -243,6 +243,12 @@ mathjax:
   cdn: //cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML
 
 
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
 # Swiftype Search API Key
 #swiftype_key:
 
@@ -276,7 +282,7 @@ duoshuo_shortname: teveillan
 
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-75903760-1
 
 # CNZZ count
 #cnzz_siteid:
@@ -314,9 +320,9 @@ facebook_comments_plugin:
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: f6WaNjTo9YTH1y8xtInDo4qe-gzGzoHsz
+  app_key: l8NY11EGMj8S5kN7Y1xariaG
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
